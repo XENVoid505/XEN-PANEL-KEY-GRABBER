@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+  background-color: #0a0a0a;
+  color: #00f7ff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #00f7ff;
+  color: #0a0a0a;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #00c4cc;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.7);
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #00f7ff;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+#copyMessage {
+  margin-top: 1rem;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+  font-size: 1rem;
+}

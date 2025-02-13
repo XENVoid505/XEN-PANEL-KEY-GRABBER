@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Key - FF Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generate a New Key</h1>
+    <p>Click the button below to generate a unique key.</p>
+    <button onclick="generateKey()">Generate Key</button>
+    <div id="generatedKey" class="result"></div>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    // Function to generate a key
+    function generateKey() {
+      const key = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+      const generatedKeyDiv = document.getElementById('generatedKey');
+      generatedKeyDiv.textContent = `🔑 Your new key: ${key}`;
+    }
+  </script>
+</body>
+</html>
